@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500|Stalinist+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+}
+
+h1 {
+  letter-spacing: 0.05em;	
+}
+	
+.size-3 {
+  font-size: 1.75rem;	  
+}	
+
+.white75 {
+  color: rgba(255,255,255,0.75);	
+}	
+
+.flex-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;  
+}	
+
+.flex-row {
+  display: flex;
+  justify-content: space-evenly;  
+  align-items: center;
+}	
+
+.nappi {
+  background-color: #222;
+  border-radius: 0.5em;
+  border: 2px solid #333;
+  padding: 1em;
+  color: #eee;  
+  margin: 2em;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 3px 3px 3px #ccc;
+  font-size: 1.25em;
+}	
+
+.nappi:hover {
+  color: #fff;	
+  background-color: #000;
+}	
+
+.sivu {
+	min-height: 100vh;
+	padding: 6em 2em 3em 3em;
+	box-sizing: border-box;
+}
+
+.sivu > div {
+  max-width: 39rem;
+  margin: 0 auto;  
+	
+}	
+
+.sivu h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;  
+}	
+
+.sivu h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;  
+  font-weight: 500;
+}	
+
+.sivu ul li {
+  margin-left: 2em;
+} 	
+
+.pelit {
+  display: flex;
+  justify-content: center;	
+  margin: 1em 0;
+}	
+
+.pelit div {
+  margin: 0 1em;
+  border: 1px solid #023353;
+  padding: 1em 1.5em;  
+  border-radius: 0.5em;
+  background-color: #012136;
+  text-align: center;
+}	
+
+#etusivu, #ilmoittaudu, #yhteystiedot, #footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+}
+
+#navigointi {
+	background-color: rgba(0,0,0,0.7);
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5em;
+	box-sizing: border-box;
+}
+
+#navigointi h1 {
+    font-family: 'Stalinist One', cursive;	
+	font-size: 1.5rem;
+}	
+
+#navigointi a {
+	color: rgba(255,255,255,0.8);
+	text-decoration: none;
+	padding: 0 1em;
+}
+
+#navigointi a:hover {
+	color: #fff;
+}
+
+#navigointi ul {
+	display: flex;
+}
+
+#navigointi ul li {
+	display: block;
+}
+
+#etusivu {
+	background-image: url(tausta2.jpg);
+}
+
+#etusivu h1 {
+  font-family: 'Stalinist One', cursive;	
+  font-size: 5rem;
+  margin-bottom: -0.3em;
+}	
+
+
+
+#lan {
+	background-color: #012136;	
+	color: #eee;
+}
+
+#turnaus {
+	background-color: #04436b;	
+	color: #eee;
+}
+
+#info {
+	background-color: #075181;	
+	color: #eee;
+}
+
+#ilmoittaudu {
+	background-image: url('gplaypattern.png');
+	color: #333;
+}
+
+#yhteystiedot {
+	background-color: #fafafa;
+	color: #333;
+}
+
+#footer {
+	padding: 1em 0;
+	background-color: #fff;
+	color: #023353;
+	font-size: 0.8rem;
+	font-weight: 100;	
+}
+
+#footer .logo img {
+	height: 12em;
+}
+
+.contact div {
+  margin: 2em;	
+}	
+
+.contact div span {
+  font-weight: 500;	
+}	
+
+.coop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}	
+
+.coop div {
+  margin: 0.5em;	
+}	
+
+.coop-logo img {
+  height: 3em;	
+  margin: 0.5em;
+}	
