@@ -80,7 +80,7 @@ h1 {
 }	
 
 .sivu h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 1rem;  
 }	
 
@@ -99,10 +99,11 @@ h1 {
   display: flex;
   justify-content: center;	
   margin: 1em 0;
+  flex-wrap: wrap;
 }	
 
 .pelit div {
-  margin: 0 1em;
+  margin: 0.5em 1em;
   border: 1px solid #023353;
   padding: 1em 1.5em;  
   border-radius: 0.5em;
@@ -243,6 +244,11 @@ h1 {
 }
 
 @media only screen and (min-width: 768px) {
+
+  .sivu h1 {
+    font-size: 3rem;
+  }
+
   #etusivu {
     font-size: 2rem;    
   }
