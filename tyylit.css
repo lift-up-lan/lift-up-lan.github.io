@@ -81,7 +81,6 @@ h1 {
 .sivu > div {
   max-width: 39rem;
   margin: 0 auto;  
-	
 }	
 
 .sivu h1 {
@@ -176,8 +175,6 @@ h1 {
   margin-bottom: -0.3em;
 }	
 
-
-
 #lan {
 	background-color: #012136;	
 	color: #eee;
@@ -196,6 +193,10 @@ h1 {
 #ilmoittaudu {
 	background-image: url('gplaypattern.png');
 	color: #333;
+}
+
+#ilmoittaudu * {
+   text-align: center; 
 }
 
 #yhteystiedot {
@@ -230,13 +231,13 @@ h1 {
 }	
 
 .coop div {
-  margin: 0.5em;	
+  margin: 0.5em;	    
 }	
 
 .coop img {
-  height: 3em;	
+  max-height: 5em;   
   margin: 0.5em;
-  max-width: 100vw;
+  max-width: 95vw;  
 }	
 
 @media only screen and (max-width: 600px) {
