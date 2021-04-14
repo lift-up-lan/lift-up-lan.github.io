@@ -54,7 +54,7 @@ h1 {
 }
 
 .nappi {
-  background-color: #222;
+  background-color: #444;
   border-radius: 0.5em;
   border: 2px solid #333;
   padding: 1em 1.5em;
@@ -114,6 +114,7 @@ h1 {
   background-color: #012136;
   text-align: center;
 }	
+
 
 #etusivu, #ilmoittaudu, #yhteystiedot, #footer {
 	display: flex;
