@@ -131,6 +131,22 @@ h1 {
   text-align: center;
 }
 
+.nimet {
+  display: flex;
+  justify-content: center;	
+  margin: 1em 0;
+  flex-wrap: wrap;
+}	
+
+.nimet div {
+  margin: 0.5em 1em;
+  border: 1px solid #101000;
+  padding: 1em 1.5em;  
+  border-radius: 0.5em;
+  background-color: #000000;
+  text-align: center;
+}	
+
 #etusivu, #ilmoittaudu, #yhteystiedot, #footer {
 	display: flex;
 	flex-direction: column;
@@ -213,6 +229,17 @@ h1 {
 
 #ilmoittaudu * {
    text-align: center; 
+}
+
+#voittajat {
+  background: url(voittajat.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;  
+  font-size: 1.25rem;
 }
 
 #yhteystiedot {
