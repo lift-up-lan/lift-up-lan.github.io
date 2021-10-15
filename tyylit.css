@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500|Stalinist+One&display=swap');
+@import url("https://use.typekit.net/wih1tal.css");
 
 * {
   margin: 0;
@@ -10,7 +10,10 @@ html {
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+  font-family: "forma-djr-micro", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 130%;
 	color: #fff;
 }
 
@@ -34,6 +37,12 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: flex-end;  
+}	
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
 }	
 
 .flex-row {
@@ -84,7 +93,7 @@ h1 {
 }	
 
 .sivu h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;  
 }	
 
@@ -165,17 +174,20 @@ h1 {
   box-sizing: border-box;
   flex-wrap: wrap;
   visibility: hidden;
+  text-transform: uppercase;
 }
 
 #navigointi h1 {
-    font-family: 'Stalinist One', cursive;	
+  font-family: hotel-open, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 	font-size: 1.5rem;
 }	
 
 #navigointi a {
 	color: rgba(255,255,255,0.8);
 	text-decoration: none;
-	padding: 0 1em;
+	padding: 0 0.7em;
 }
 
 #navigointi a:hover {
@@ -198,13 +210,15 @@ h1 {
   background-size: cover;
   height: 100%;
   overflow: hidden;  
-  font-size: 1.25rem;
+  font-size: 2rem;
 }
 
 #etusivu h1 {
-  font-family: 'Stalinist One', cursive;	
-  font-size: 2.5em;
-  margin-bottom: -0.3em;
+  font-family: hotel-open, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.25em;
+  border-bottom: 3px solid #fff;
 }	
 
 #lan {
@@ -271,10 +285,12 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;  
+  
 }	
 
 .coop div {
-  margin: 0.5em;	    
+  margin: 0.5em;
+   
 }	
 
 .coop img {
@@ -289,14 +305,14 @@ h1 {
   }  
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 850px) {
 
   .sivu h1 {
     font-size: 3rem;
   }
 
   #etusivu {
-    font-size: 2rem;    
+    font-size: 2.75rem;    
   }
 
   #navigointi {
@@ -306,6 +322,6 @@ h1 {
 
 @media only screen and (min-width: 1200px) {
   #etusivu {
-    font-size: 2.5rem;    
+    font-size: 2.75rem;    
   }
 }  
