@@ -221,6 +221,28 @@ h1 {
   border-bottom: 3px solid #fff;
 }	
 
+.etusivu-linkit {
+  display: flex;
+  flex-direction: row;  
+  font-size: 0.5em;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.etusivu-linkit div {
+  margin: 0 0.5em;  
+}
+
+.etusivu-linkit img {
+  width: 1em;
+  margin-right: 0.5em;  
+}
+
+.etusivu-linkit a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 #lan {
 	background-color: #012136;	
 	color: #eee;
@@ -302,7 +324,16 @@ h1 {
 @media only screen and (max-width: 600px) {
   #etusivu {
     font-size: 1rem;    
-  }  
+  }
+  
+  .etusivu-linkit {
+    flex-direction: column;
+    font-size: 0.8em;
+  }
+
+  .etusivu-linkit div {
+    margin: 0.5em 0;
+  }
 }
 
 @media only screen and (min-width: 850px) {
