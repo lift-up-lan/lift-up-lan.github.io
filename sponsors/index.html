@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>LIFTUP SPONSORIT</title>
+    <style>
+.container {
+  overflow: hidden;
+  display: flex;
+  height: 500px;
+  width: 1500px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.container div {
+  display: flex;
+  align-items: center;
+  height: 400px;
+  min-width: 375px;
+  margin-left: 50px;
+  animation: slide 30s linear infinite;
+  align-self: center;
+}
+
+.container div img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(-1800px, 0, 0);
+  }
+  50% {
+    transform: translate3d(1500px, 0, 0); /* The image width */
+  }
+  100% {
+    transform: translate3d(-1800px, 0, 0);
+  }  
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div><img src="../images/HAYO_vaaka_150dpi.png"></div>
+        <div><img src="../images/huge.jpeg"></div>
+        <div><img src="../images/dg_jäsenliike_4vari.png"></div>
+        <div><img src="../images/pikkupiironki.png"></div>
+      </div>
+  </body>
+</html>
