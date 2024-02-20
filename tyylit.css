@@ -1,12 +1,33 @@
 @import url("https://use.typekit.net/wih1tal.css");
 
+/* --- MUUTTUJAMÄÄRITYKSET --- */
+
+:root {
+  --primary-darkest: #171e2a;
+  --primary-darker: #29344a;
+  --primary: #3a4a6a;
+  --secondary: #ff9ab0;
+  --neutral-darkest: #000000;
+  --neutral-darker: #202122;
+  --neutral-dark: #505255;
+  --neutral: #9fa3aa;
+  --neutral-light: #c7ccd5;
+  --neutral-lighter: #e3e6ea;
+  --neutral-lightest: #ffffff;
+  --items-per-page: 4;
+}
+
+/* --- YLEISET TYYLIMÄÄRITYKSET --- */
+
 * {
   margin: 0;
   padding: 0;  
 }
 
 html {
-  scroll-behavior: smooth;  
+  scroll-behavior: smooth;
+  background-color: var(--neutral-darkest);
+  color: var(--neutral-lightest);
 }
 
 body {
@@ -14,25 +35,18 @@ body {
   font-weight: 300;
   font-style: normal;
   font-size: 130%;
-	color: #fff;
 }
 
 h1 {
   letter-spacing: 0.05em;	
 }
 
-/* --- VÄRIASETUKSET -- */
+/* --- YLEISET LUOKKA-ASETUKSET --- */
 
 .white75 {
   color: rgba(255,255,255,0.75);	
 }	
 
-.size-3 {
-  font-size: 1.75rem;	  
-}	
-
-
- 
 .flex-right {
   display: flex;
   flex-direction: column;
@@ -62,28 +76,30 @@ h1 {
   align-items: center;
 }
 
-.nappi {
-  background-color: #444;
+.button {
+  background-color: var(--neutral-dark);
   border-radius: 0.5em;
-  border: 2px solid #333;
+  border: 2px solid var(--neutral);
   padding: 1em 1.5em;
-  color: #eee;  
+  color: var(--neutral-lighter);  
   margin: 2em;
   text-decoration: none;
   font-weight: 500;
-  box-shadow: 3px 3px 3px #ccc;
+  box-shadow: 3px 3px 3px var(--neutral-lighter);
   font-size: 1.25em;
   text-align: center;
 }	
 
-.nappi:hover {
-  color: #fff;	
-  background-color: #000;
+.button:hover {
+  color: var(--neutral-lightest);	
+  background-color: var(--neutral-darkest);
 }	
+
+/* --- SIVUN YLEISET ASETUKSET --- */
 
 .sivu {
 	min-height: 100vh;
-	padding: 6em 2em 3em 3em;
+	padding: 5.5em 2em 3em 3em;
 	box-sizing: border-box;
 }
 
@@ -93,7 +109,7 @@ h1 {
 }	
 
 .sivu h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;  
 }	
 
@@ -108,21 +124,64 @@ h1 {
   margin-left: 2em;
 } 	
 
-.pelit {
+/* --- ALASIVUJEN TAUSTAVÄRIMÄÄRITYKSET --- */
+
+.alasivu:nth-child(even) {
+  background-color: var(--primary-darkest);
+  color: var(--neutral-lighter);
+}
+
+.alasivu:nth-child(odd) {
+  background-color: var(--neutral-darker);
+  color: var(--neutral-lighter);
+}
+
+/* --- KARUSELLIN MÄÄRITYKSET --- */
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  margin: 0;
+}
+
+.carousel-container {
+  white-space: nowrap;
+}
+
+.carousel-item {
+  display: inline-block;
+  min-width: calc(100% / var(--items-per-page));
+  box-sizing: border-box;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.carousel-item img {
+  height: 5rem;
+}
+
+/* --- PELILAATIKOIDEN MÄÄRITYKSET --- */
+
+.games {
   display: flex;
   justify-content: center;	
   margin: 1em 0;
   flex-wrap: wrap;
 }	
 
-.pelit div {
+.games div {
+  background-color: var(--secondary);
+  color: var(--neutral-darkest);
+  font-weight: bold;
   margin: 0.5em 1em;
-  border: 1px solid #023353;
   padding: 1em 1.5em;  
   border-radius: 0.5em;
-  background-color: #012136;
   text-align: center;
 }	
+
+/* --- JÄRJESTÄLAATIKOIDEN MÄÄRITYKSET --- */
 
 .staff {
   display: flex;
@@ -132,29 +191,80 @@ h1 {
 }	
 
 .staff div {
-  margin: 0.5em 1em;
-  border: 1px solid #ddd;
+  margin: 0.5em 0.5em;
   padding: 1em 1.5em;  
-  border-radius: 0.5em;
-  background-color: #f4f4f4;
+  border-radius: 0.3em;
+  background-color: var(--secondary);
+  color: var(--neutral-darkest);
   text-align: center;
+  width: 4rem;
+  font-weight: 500;
 }
 
-.nimet {
-  display: flex;
-  justify-content: center;	
-  margin: 1em 0;
-  flex-wrap: wrap;
-}	
+/* --- POSTITUSLISTAN TILAUSLOMAKKEEN MÄÄRITYKSET --- */
 
-.nimet div {
-  margin: 0.5em 1em;
-  border: 1px solid #101000;
-  padding: 1em 1.5em;  
-  border-radius: 0.5em;
-  background-color: #000000;
-  text-align: center;
-}	
+#subscribe {
+  background-color: var(--neutral-dark);
+  padding: 1.5em;
+  margin: 1em;
+  border-radius: 0.25em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10em;
+}
+
+#subscribe form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 100%;
+}
+
+#subscribe h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+#subscribe input[type=text] {
+  font-size: 1.5rem;
+  padding: 0.2em;
+  border-radius: 0.2em;
+  border: none;
+  outline: none;
+  background-color: var(--neutral-lighter);
+  width: 100%;
+}
+
+#subscribe input:focus {
+  background-color: var(--neutral-lightest);
+}
+
+#subscribe input[type=submit] {
+  margin-top: 0.5em;
+  padding: 0.5em 1em;
+  font-size: 1.2rem;
+  border-radius: 0.2em;
+  border: none;
+  outline: none;
+  background-color: var(--neutral);
+  
+}
+
+#subscribe input[type=submit]:hover {
+  background-color: var(--secondary);
+}
+
+#subscribe_error {
+  color: var(--secondary);
+}
+
+#subscribe_info {
+  font-size: 1.25em;
+}
+
+/* --- SIVUKOHTAISET MÄÄRITYKSET --- */
 
 #etusivu, #ilmoittaudu, #yhteystiedot, #footer {
 	display: flex;
@@ -164,13 +274,16 @@ h1 {
 }
 
 #navigointi {
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0,0,0,0.2);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
 	position: fixed;
+  z-index: 99;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0.5em;
+	padding: 0.75em;
   box-sizing: border-box;
   flex-wrap: wrap;
   visibility: hidden;
@@ -181,17 +294,19 @@ h1 {
   font-family: hotel-open, sans-serif;
   font-weight: 400;
   font-style: normal;
-	font-size: 1.5rem;
+	font-size: 1.75rem;
 }	
 
 #navigointi a {
 	color: rgba(255,255,255,0.8);
 	text-decoration: none;
 	padding: 0 0.7em;
+  font-weight: 400;
+  letter-spacing: 0.05em;
 }
 
 #navigointi a:hover {
-	color: #fff;
+	color: var(--secondary);
 }
 
 #navigointi ul {
@@ -211,120 +326,116 @@ h1 {
   height: 100%;
   overflow: hidden;  
   font-size: 2rem;
+  font-size: min(max(calc(100vw/30), 1.5rem), 2rem);
 }
 
 #etusivu h1 {
   font-family: hotel-open, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 3.25em;
-  border-bottom: 3px solid #fff;
+  font-size: min(calc(100vw/7), 5em);
+  border-bottom: 3px solid var(--neutral-lightest);
 }	
+
+#etusivu > div {
+  max-width: none;
+}
+
+.etusivu--secondary {
+  font-size: min(calc(100vw/15), 3em);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .etusivu-linkit {
   display: flex;
   flex-direction: row;  
-  font-size: 0.5em;
+  font-size: 0.75em; 
   align-items: center;
   margin-top: 2em;
 }
 
 .etusivu-linkit div {
-  margin: 0 0.5em;  
+  margin: 0 0.5em;
 }
 
 .etusivu-linkit img {
   width: 1em;
-  margin-right: 0.5em;  
+  margin-right: 0.5em;
+  color: var(--neutral-lightest); 
 }
 
 .etusivu-linkit a {
-  color: #ffffff;
+  color: var(--neutral-lightest);
   text-decoration: none;
 }
 
-#lan {
-	background-color: #012136;	
-	color: #eee;
+.etusivu-linkit a:hover {
+  color: var(--secondary);  
 }
 
-#turnaus {
-	background-color: #04436b;	
-	color: #eee;
+#kumppanit {
+  background-color: var(--neutral-lightest);
+  color: var(--neutral-darker);
+  padding: 0;
+  margin: 0;
+  min-height: 0;
+  text-align: center;
+  padding: 1em 0;
 }
 
-#palkinnot {
-	background-color: #075181;	
-	color: #eee;
+#kumppanit > div {
+  max-width: 100vw;
 }
 
-#ilmoittaudu {
-	background-image: url('gplaypattern.png');
-	color: #333;
+#kumppanit h1 {
+  font-size: 1.5rem;
 }
 
 #ilmoittaudu * {
    text-align: center; 
 }
 
-#voittajat {
-  background: url(voittajat.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100%;
-  overflow: hidden;  
-  font-size: 1.25rem;
-}
-
-#yhteystiedot {
-	background-color: #fafafa;
-	color: #333;
-}
-
-.contact div {
+#yhteystiedot .contact div {
   margin: 2em 2em 0em 2em;
 }	
 
-.contact div span {
+#yhteystiedot .contact div span {
   font-weight: 500;	
 }	
 
 #footer {
-	padding: 1em 0;
-	background-color: #fff;
-	color: #023353;
+	padding: 2rem 3rem;
+  background-color: var(--neutral-darkest);
+  color: var(--neutral-lightest); 
 	font-size: 0.8rem;
 	font-weight: 100;	
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 #footer .logo img {
   height: 12em;
 }
 
-.coop {
+#footer .contact {
   display: flex;
+  font-size: 1rem;
   flex-direction: column;
-  align-items: center;  
-  
-}	
+}
 
-.coop div {
-  margin: 0.5em;
-   
-}	
+#footer .contact > div {
+  padding: 0.5rem;
+}
 
-.coop img {
-  max-height: 7em;   
-  margin: 0.5em;
-  max-width: 95vw;  
-}	
+#footer .contact img {
+  height: 100%;
+  margin-right: 1.5rem;
+}
 
 @media only screen and (max-width: 600px) {
-  #etusivu {
-    font-size: 1rem;    
-  }
   
   .etusivu-linkit {
     flex-direction: column;
@@ -336,23 +447,32 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 900px) {
 
   .sivu h1 {
     font-size: 3rem;
   }
 
-  #etusivu {
-    font-size: 2.75rem;    
-  }
-
   #navigointi {
     visibility: visible;
   }
+
+  #footer {
+    flex-direction: row;
+  }
+
+  #footer .contact {
+    flex-direction: row;
+  }
+
 }  
 
 @media only screen and (min-width: 1200px) {
-  #etusivu {
-    font-size: 2.75rem;    
+  .etusivu--secondary {
+    font-size: 1.5em;
+    flex-direction: row;
+  }
+  .etusivu--secondary div {
+    margin: 0.2em;
   }
 }  
