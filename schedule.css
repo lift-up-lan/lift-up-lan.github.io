@@ -1,0 +1,90 @@
+@media screen and (min-width: 700px) {
+    .schedule {
+      display: grid;
+      grid-gap: 0.5em; 
+      grid-template-rows:
+        [tracks] auto /* Foreshadowing! */
+        [pe-14] 1fr
+        [pe-15] 1fr
+        [pe-16] 1fr
+        [pe-17] 1fr
+        [pe-18] 1fr
+        [pe-19] 1fr
+        [pe-20] 1fr
+        [pe-21] 1fr
+        [pe-22] 1fr
+        [pe-23] 1fr
+        [la-00] 1fr
+        [la-01] 1fr
+        [la-02] 1fr
+        [la-03] 1fr
+        [la-04] 1fr
+        [la-05] 1fr
+        [la-06] 1fr
+        [la-07] 1fr
+        [la-08] 1fr
+        [la-09] 1fr
+        [la-10] 1fr
+        [la-11] 1fr
+        [la-12] 1fr
+        [la-13] 1fr
+        [la-14] 1fr;
+      grid-template-columns:
+        [day] 2em
+        [times] 2em
+        [track-1-start] 1fr
+        [track-1-end track-2-start] 1fr
+        [track-2-end track-3-start] 1fr
+        [track-3-end track-4-start] 1fr
+        [track-4-end];
+    }
+
+    .day-slot {
+      grid-column: day;
+      background-color: var(--neutral-lighter);
+      color: var(--neutral-darker);
+      writing-mode: vertical-rl;
+      text-align: center;
+    }
+
+    .time-slot {
+      grid-column: times;
+    }
+     
+  }
+
+  .track-1 {
+    background-color: var(--neutral-dark);
+    color: #fff;
+  }
+  
+  .track-2 {
+    background-color: var(--primary);
+    color: var(--neutral-lighter);
+  }
+  
+  .track-3 {
+    background-color: #544D69;
+    color: #fff;
+  }
+  
+  .track-4 {
+    background-color: #c35500;
+    color: #fff;
+  }
+
+  .schedule > * {    
+    padding: 0.3em;
+    border-radius: 0.2em;
+  }
+
+  .schedule h2 {
+    margin: 0;
+    font-size: 110%;
+    font-weight: 600;
+  }
+
+  .schedule h3 {
+    font-size: 1em;
+    border-top: 1px dashed var(--neutral);
+  }
