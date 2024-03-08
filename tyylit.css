@@ -108,6 +108,11 @@ h1 {
   margin: 0 auto;  
 }	
 
+.sivu-wide > div {
+  max-width: none;
+  /* margin: 0 4em; */
+}
+
 .sivu h1 {
   font-size: 2rem;
   margin-bottom: 1rem;  
@@ -435,7 +440,7 @@ h1 {
   margin-right: 1.5rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   
   .etusivu-linkit {
     flex-direction: column;
@@ -445,7 +450,14 @@ h1 {
   .etusivu-linkit div {
     margin: 0.5em 0;
   }
+
 }
+
+@media only screen and (min-width: 700px) {
+  .sivu-wide > div {
+    margin: 0 2em;
+  }
+}  
 
 @media only screen and (min-width: 900px) {
 
@@ -474,5 +486,9 @@ h1 {
   }
   .etusivu--secondary div {
     margin: 0.2em;
+  }
+
+  .sivu-wide > div {
+    margin: 0 4em;
   }
 }  

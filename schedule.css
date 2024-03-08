@@ -1,3 +1,38 @@
+.schedule {
+  margin-top: 1em;
+}
+
+.schedule > * {    
+  padding: 0.3em;
+  border-radius: 0.2em;
+}
+
+.schedule h2 {
+  margin: 0;
+  font-size: 110%;
+  font-weight: 600;
+  margin-top: 1.5em;
+}
+
+.schedule h3 {
+  font-size: 1em;    
+  border-radius: 0;
+  margin-top: 1em;
+  font-weight: 400;
+}
+
+.empty {
+  display: none;
+}
+
+.session {
+  margin-bottom: 0.5em;
+}
+
+.session-time {
+  font-size: 0.8em;
+}
+
 @media screen and (min-width: 700px) {
     .schedule {
       display: grid;
@@ -28,29 +63,55 @@
         [la-11] 1fr
         [la-12] 1fr
         [la-13] 1fr
-        [la-14] 1fr;
+        [la-14] 1fr
+        [la-15] 0;
       grid-template-columns:
         [day] 2em
-        [times] 2em
+        [times] 3em
         [track-1-start] 1fr
         [track-1-end track-2-start] 1fr
         [track-2-end track-3-start] 1fr
-        [track-3-end track-4-start] 1fr
+        [track-3-end track-4-start] 0fr
         [track-4-end];
     }
 
     .day-slot {
       grid-column: day;
-      background-color: var(--neutral-lighter);
-      color: var(--neutral-darker);
       writing-mode: vertical-rl;
-      text-align: center;
     }
 
     .time-slot {
       grid-column: times;
+      text-align: right;
     }
-     
+    
+    .empty {
+      display: block;
+    }
+
+    .session {
+      margin: 0;
+    }
+
+    .session-time {
+      display: none;
+    }
+
+    .schedule h2 {
+      margin: 0;
+    }
+
+    .schedule h3 {
+      border-top: 1px dashed var(--neutral);
+      margin: 0;
+    }
+
+  }
+
+  .day-slot {
+    background-color: var(--neutral-lighter);
+    color: var(--neutral-darker);
+    text-align: center;    
   }
 
   .track-1 {
@@ -73,18 +134,3 @@
     color: #fff;
   }
 
-  .schedule > * {    
-    padding: 0.3em;
-    border-radius: 0.2em;
-  }
-
-  .schedule h2 {
-    margin: 0;
-    font-size: 110%;
-    font-weight: 600;
-  }
-
-  .schedule h3 {
-    font-size: 1em;
-    border-top: 1px dashed var(--neutral);
-  }
