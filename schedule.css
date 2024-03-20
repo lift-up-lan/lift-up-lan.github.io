@@ -71,7 +71,7 @@
         [track-1-start] 1fr
         [track-1-end track-2-start] 1fr
         [track-2-end track-3-start] 1fr
-        [track-3-end track-4-start] 0fr
+        [track-3-end track-4-start] 1fr
         [track-4-end];
     }
 
@@ -130,7 +130,7 @@
   }
   
   .track-4 {
-    background-color: #c35500;
+    background-color: #3A6069;
     color: #fff;
   }
 

@@ -100,7 +100,9 @@
 			<ul>
 			  <li>5 kpl Lenovo Legion Gaming Control Mouse Pad XXL (JH Computer)</li>
 			  <li>5 kpl 20 euron lahjakortti Steam-palveluun (Huittinen GO eSports)</li>
-			  <li>5 kpl Razer DeathAdder Essential pelihiiri, musta (Power Sastamala)</li>	
+			  <li>5 kpl Razer DeathAdder Essential pelihiiri, musta (Power Sastamala)</li>
+			  <li>1 kpl 50 euron lahjakortti Lautturiin (K-Supermarket Lautturi)</li>
+			  <li>yllätysohjelman palkinnot (K-Supermarket Lautturi)</li>
 			</ul>
 
 		</div>   
@@ -112,7 +114,12 @@
 
 			<h2>Mitä konepaikka sisältää?</h2>
 			<p>Saat laneilla konepaikan, joka sisältää pöydän, tuolin, yhden maadoitetun 
-			   pistorasian sekä yhden ethernet-verkkopaikan. Laneilla on myös peseytymismahdollisuus.</p> 
+			   pistorasian sekä yhden ethernet-verkkopaikan. Laneilla on myös peseytymismahdollisuus.</p>
+			<p>Jos haluat viettää laneja pelituolissa istuen, niin voit vuokrata sellaisen lanien 
+			   ajaksi 25 euron hintaan. Pelituolin vuokra maksetaan etukäteen MobilePayn 
+			   kautta ja pelituolin saa sitten käyttöönsä laneilla omalla nimellä. Pelituolin 
+			   vuokraus kysytään ilmoittautumisen yhteydessä ja ilmoittautumisen jälkeen saat 
+			   tarkemmat ohjeet.</p>   
 			
 			<h2>Mitä mukaan laneille?</h2>
 			<p>Tarvitset mukaan ainakin seuraavat asiat:</p>
@@ -132,7 +139,10 @@
 			 
 			<h2>Mistä saan syötävää?</h2>
 			<p>Voit tuoda mukanasi omat eväät. 
-			   Tapahtumassa on buffetti, josta voit ostaa muun muasssa kahvia, makeaa ja suolaista.</p>
+			   Tapahtumassa on buffetti, josta voit ostaa muun muasssa kahvia, makeaa ja suolaista. 
+			   Lauantaiaamuna buffetista saa pientä purtavaa aamupalaksi. 
+			   Buffetissa on myös mikroaaltouuni, jolla voit lämmittää ruokasi.  
+			   Buffetin aukioloajat näet aikataulusta.</p>
 			 
 			<h2>Mitä minun tulee vielä huomioida?</h2>
 			<p>Hienoa, että kysyit! Muista, että lanit ovat päihteettömät!</p>
@@ -152,6 +162,11 @@
             <div class="session session-1 track-1" 
                 style="grid-column: track-1; grid-row: pe-14 / pe-15;">
               <div class="session-title">Ulko-ovet avautuvat</div>                
+            </div>
+            <div class="session session-1 track-4" 
+                style="grid-column: track-4; grid-row: pe-14 / pe-19;">
+              <div class="session-title">NY-kahvila aulassa</div>
+			  <div class="session-time">14.00-19.00</div>               
             </div>
             <h3 class="time-slot empty" style="grid-row: pe-15;">15.00</h3>
             <h3 class="time-slot empty" style="grid-row: pe-16;">16.00</h3>
@@ -174,6 +189,11 @@
                 <div class="session-title">CS2-karsinta 2 (BO1)</div>
                 <div class="session-time">19.00-20.00</div>                                 
             </div>
+
+            <div class="session session-4 track-4" style="grid-column: track-4; grid-row: pe-19 / la-01">
+                <div class="session-title">Opiskelijakunnan buffetti aulassa</div>
+                <div class="session-time">19.00-1.00</div>                                 
+            </div>			
 
             <h3 class="time-slot" style="grid-row: pe-20;">20.00</h3>
             <div class="session session-4 track-2" style="grid-column: track-2; grid-row: pe-20">
@@ -232,7 +252,13 @@
                 <div class="session-title">Ulko-ovet avautuvat</div>
             </div>
 
-            <h3 class="time-slot empty" style="grid-row: la-09;">9.00</h3>
+            <h3 class="time-slot" style="grid-row: la-09;">9.00</h3>
+
+			<div class="session session-4 track-4" style="grid-column: track-4; grid-row: la-09 / la-12">
+                <div class="session-title">Opiskelijakunnan buffetti aulassa</div>
+                <div class="session-time">9.00-12.00</div>                                 
+            </div>
+
             <h3 class="time-slot" style="grid-row: la-10;">10.00</h3>
             <div class="session session-4 track-2" style="grid-column: track-2; grid-row: la-10">
                 <div class="session-title">Palkintojen jako</div>
@@ -258,16 +284,19 @@
 	  <div id="ilmoittaudu" class="sivu alasivu">
 		<div>
 	      <h1>Ilmoittautuminen</h1>
-	  	  <p>Lanien ilmoittautuminen ei ole vielä auennut, mutta voit liittyä alta postituslistallemme. Sen kautta tiedotamme ilmoittautumisen avautumisesta ja muista laneihin liittyvistä asioista.</p>
-		  <div id="subscribe">
-            <form id="subscribe_form">
-			  <h2>Liity tästä lanien postituslistalle!</h2>
-		  	  <input id="subscribe_email" type="text" name="email" placeholder="sähköpostiosoite">
-			  <div id="subscribe_error"></div>
-			  <input id="subscribe_submit" type="submit" name="submit" value="Liity postituslistalle">
-		    </form>
-			<script src='js/subscribe.js'></script>
-		  </div>
+
+	  	  <p>Voit ilmoittautua laneille alla olevan linkin kautta. 
+			 Ilmoittautumisessa sinulta kysytään seuraavat asiat:
+			 <ul>
+				<li>nimi- ja yhteystietosi sekä alaikäiseltä osallistujalta huoltajan tiedot</li>
+				<li>haluatko vuokrata pelituolin lanien ajaksi</li>
+				<li>osallistutko CS2-turnaukseen (K16)</li>
+			 </ul></p>
+		  
+          <p>Laneille osallistuminen ei maksa mitään.</p>
+
+		  <div class="flex-center"><a class="button" href="https://forms.office.com/e/ccufxY6SBZ" target="_blank">Ilmoittaudu laneille tästä!</a></div>
+
 	    </div>
 	  </div> 	
 

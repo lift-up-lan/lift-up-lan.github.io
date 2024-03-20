@@ -77,22 +77,20 @@ h1 {
 }
 
 .button {
-  background-color: var(--neutral-dark);
-  border-radius: 0.5em;
-  border: 2px solid var(--neutral);
+  background-color: var(--secondary);
   padding: 1em 1.5em;
-  color: var(--neutral-lighter);  
-  margin: 2em;
+  color: var(--primary);  
+  margin-top: 2em;
   text-decoration: none;
-  font-weight: 500;
-  box-shadow: 3px 3px 3px var(--neutral-lighter);
-  font-size: 1.25em;
+  font-weight: 600;
+  font-size: 1em;
   text-align: center;
+  border-radius: 0.5em;
 }	
 
 .button:hover {
-  color: var(--neutral-lightest);	
-  background-color: var(--neutral-darkest);
+  color: var(--secondary);	
+  background-color: var(--neutral-dark);
 }	
 
 /* --- SIVUN YLEISET ASETUKSET --- */
@@ -128,6 +126,10 @@ h1 {
 .sivu ul li {
   margin-left: 2em;
 } 	
+
+.sivu p {
+  margin-top: 0.5em;
+}
 
 /* --- ALASIVUJEN TAUSTAVÄRIMÄÄRITYKSET --- */
 
@@ -398,9 +400,9 @@ h1 {
   font-size: 1.5rem;
 }
 
-#ilmoittaudu * {
+/* #ilmoittaudu * {
    text-align: center; 
-}
+} */
 
 #yhteystiedot .contact div {
   margin: 2em 2em 0em 2em;
