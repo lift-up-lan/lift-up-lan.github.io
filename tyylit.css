@@ -306,7 +306,7 @@ h1 {
 
 #navigointi h1 span {
   font-family: "forma-djr-micro", sans-serif;
-  font-weight: 100;  
+  font-weight: 300;  
 }
 
 #navigointi a {
@@ -351,6 +351,10 @@ h1 {
 
 #etusivu > div {
   max-width: none;
+}
+
+.etusivu--primary img {
+  width: min(calc(100vw/1.9), 4em);
 }
 
 .etusivu--secondary {
