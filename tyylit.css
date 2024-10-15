@@ -345,7 +345,7 @@ h1 {
   font-family: hotel-open, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: min(calc(100vw/7), 5.1em);
+  font-size: min(calc(100vw/7), 4.9em); 
   border-bottom: 3px solid var(--neutral-lightest);
 }	
 
@@ -354,7 +354,8 @@ h1 {
 }
 
 .etusivu--primary img {
-  width: min(calc(100vw/1.9), 4em);
+  width: min(calc(100vw/1.9), 4.2em);
+  margin-bottom: -0.2em;  
 }
 
 .etusivu--secondary {
