@@ -4,49 +4,48 @@
     <meta charset="UTF-8">
     <title>LIFTUP SPONSORIT</title>
     <style>
-.container {
-  overflow: hidden;
-  display: flex;
-  height: 500px;
-  width: 1500px;
-  margin: 0 auto;
-  align-items: center;
-}
-
-.container div {
-  display: flex;
-  align-items: center;
-  height: 400px;
-  min-width: 375px;
-  margin-left: 50px;
-  animation: slide 30s linear infinite;
-  align-self: center;
-}
-
-.container div img {
+.carousel {
   width: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  margin: 0;
 }
 
-@keyframes slide {
-  0% {
-    transform: translate3d(-1500px, 0, 0);
-  }
-  50% {
-    transform: translate3d(1000px, 0, 0); /* The image width */
-  }
-  100% {
-    transform: translate3d(-1500px, 0, 0);
-  }  
+.carousel-container {
+  white-space: nowrap;
+}
+
+.carousel-item {
+  display: inline-block;
+  min-width: calc(100% / var(--items-per-page));
+  box-sizing: border-box;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.carousel-item img {
+  height: 5em;
 }
     </style>
   </head>
   <body>
-    <div class="container">
-        <div><img src="../images/HAYO_vaaka_150dpi.png"></div>
-        <div><img src="../images/huge.jpeg"></div>
-        <div><img src="../images/dg_jäsenliike_4vari.png"></div>
-        <div><img src="../images/subway-sastamala.png"></div>
-        <div><img src="../images/pikkupiironki.png"></div>
+    <div class="carousel" id="carousel" role="region" aria-label="Yhteistyökumppanit">
+        <div class="carousel-container" id="carouselContainer" role="list">
+            <div class="carousel-item" role="listitem"><a href="https://www.power.fi/myymala/power-sastamala/s-4322/" target="_blank"><img src="../images/power.png" alt="Power Sastamala"></a></div> 
+          <div class="carousel-item" role="listitem"><a href="https://www.datagroup.fi/jhcomputer" target="_blank"><img src="../images/jh-computer-crop.png" alt="Data Group JH Computer"></a></div>
+          <div class="carousel-item" role="listitem"><a href="https://www.k-ruoka.fi/kauppa/k-market-aetsa" target="_blank"><img src="../images/kmarket-aetsa-crop.png" alt="K-Market Äetsä"></a></div>
+          <div class="carousel-item" role="listitem"><a href="https://www.hugesports.fi/" target="_blank"><img src="../images/huge.jpeg" alt="Huittinen GO eSports"></a></div>		  
+          <div class="carousel-item" role="listitem"><a href="https://www.k-ruoka.fi/kauppa/k-supermarket-lautturi" target="_blank"><img src="../images/lautturi.jpg" alt="K-Supermarket Lautturi"></a></div>
+          <div class="carousel-item" role="listitem"><a href="https://vertek.fi/" target="_blank"><img src="../images/vertek.svg" alt="Vertek"></a></div> 
+          <div class="carousel-item" role="listitem"><a href="https://liekkitiimi.com/koulutus/" target="_blank"><img src="../images/liekkitiimi.png" alt="Liekkitiimi"></a></div>
+          <div class="carousel-item" role="listitem"><a href="https://www.telila.fi/" target="_blank"><img src="../images/telila-crop.png" alt="Telilän Sähkötyö Oy"></a></div>
+          <div class="carousel-item" role="listitem"><a href="https://kivikylan.fi/" target="_blank"><img src="../images/kivikylan-crop.png" alt="Kivikylän Kotipalvaamo Oy"></a></div>
+          <div class="carousel-item" role="listitem"><a href="https://www.huittinen.fi/" target="_blank"><img src="../images/huittinen-crop.png" alt="Huittisten kaupunki"></a></div>
+             <div class="carousel-item" role="listitem"><a href="https://www.veikonkone.fi/huittinen" target="_blank"><img src="../images/veikonkone.svg" alt="Veikon Kone Huittinen"></a></div>
+<!--			  <div class="carousel-item" role="listitem"><a href="https://www.lounea.fi/" target="_blank"><img src="images/lounea.png" alt="Lounea"></a></div> -->
+          <script src='../js/carousel.js'></script>
+        </div>
       </div>
   </body>
 </html>
