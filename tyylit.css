@@ -347,15 +347,24 @@ h1 {
   font-style: normal;
   font-size: min(calc(100vw/7), 4.9em); 
   border-bottom: 3px solid var(--neutral-lightest);
+  margin-bottom: 0em;  
 }	
 
 #etusivu > div {
-  max-width: none;
+  max-width: none; 
+}
+
+.etusivu--logo {
+  width: max-content; 
+}
+
+.etusivu--primary {
+  text-align: center;
 }
 
 .etusivu--primary img {
-  width: min(calc(100vw/1.9), 4.2em);
-  margin-bottom: -0.2em;  
+  width: min(calc(100vw/1.7), 4.3em);    
+  margin-bottom: -0.2em; 
 }
 
 .etusivu--secondary {
